@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .calculator import quote
 from .checker import check_all
+from .export import price_rows, write_csv
 from .hotels import PriceNotFound
 from .loader import load_tours
 from .rooms import Room
@@ -43,6 +44,12 @@ def cmd_check(args) -> int:
     return 1 if issues else 0
 
 
+def cmd_export(args) -> int:
+    n = write_csv(args.out, price_rows(load_tours(args.data), args.date))
+    print(f"{args.out}: {n} строк")
+    return 0
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="umrah-samo")
     ap.add_argument("--data", type=Path, help="папка с hotels.json, flights.json, tours.json")
@@ -58,6 +65,11 @@ def main(argv=None) -> int:
 
     c = sub.add_parser("check", help="что ещё исправить в САМО")
     c.set_defaults(func=cmd_check)
+
+    e = sub.add_parser("export", help="прайс-лист CSV для агентов")
+    e.add_argument("out", type=Path)
+    e.add_argument("--date", type=_date, action="append", required=True, help="дата заезда, можно несколько")
+    e.set_defaults(func=cmd_export)
 
     args = ap.parse_args(argv)
     return args.func(args)
