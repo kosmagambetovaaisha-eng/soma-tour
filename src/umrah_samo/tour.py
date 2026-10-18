@@ -22,6 +22,7 @@ class Tour:
     services: list[Service] = field(default_factory=list)
     commission: list[Season] = field(default_factory=list)
     product_price: dict[str, float] = field(default_factory=dict)  # PRODUCT, by room
+    unpriced_addons: list[str] = field(default_factory=list)  # price not known yet
 
     @property
     def nights(self) -> int:
