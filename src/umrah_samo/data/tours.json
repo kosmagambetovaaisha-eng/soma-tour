@@ -1,0 +1,25 @@
+{
+  "_note": "Tours from the template doc, step 5. Tour 1 is the pilot (SAMO code 13).",
+  "defaults": {
+    "receiving_party": "Hickmet Group",
+    "makkah_nights": 4,
+    "madinah_nights": 3,
+    "flights": ["DV495", "DV498"],
+    "visa": 300,
+    "addons": {"Поезд": null, "Hajj Kit": null, "My Seat": null},
+    "commission": {"start": [1, 10], "end": [31, 3], "percent": 5}
+  },
+  "tours": [
+    {"code": "13", "name": "Умра SCAT · Swissotel Makkah · 7 ночей",
+     "makkah": "Swissotel Makkah", "madinah": "Al Manakha Rotana Madinah", "guide": 100,
+     "product_price": {"DBL": 2408}},
+    {"code": "T2", "name": "Умра SCAT · Address Jabal Omar · 7 ночей",
+     "makkah": "Address Jabal Omar", "madinah": "Waqf Safi", "guide": 70},
+    {"code": "T3", "name": "Умра SCAT · Courtyard · 7 ночей",
+     "makkah": "Courtyard by Marriott Makkah", "madinah": "View Madinah", "guide": 50},
+    {"code": "T4", "name": "Умра SCAT · Rotana Jabal Omar · 7 ночей",
+     "makkah": "Rotana Jabal Omar", "madinah": "Al Manakha Rotana Madinah", "guide": 70},
+    {"code": "T5", "name": "Умра SCAT · Shohada · 7 ночей",
+     "makkah": "Shohada", "madinah": "Waqf Safi", "guide": 50}
+  ]
+}
