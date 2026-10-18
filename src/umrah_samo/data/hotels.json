@@ -1,0 +1,23 @@
+{
+  "_note": "State of SAMO hotel setup on 15.10.2026. Prices are per person per night in USD; fill them from SAMO. Swissotel comes from the test order (4 nights BB, net 1322.66).",
+  "hotels": [
+    {"name": "Swissotel Makkah", "city": "Makkah", "partner": "Hickmet Group",
+     "per_person_night": {"DBL": 330.67}, "formulas": ["DBL"]},
+    {"name": "Address Jabal Omar", "city": "Makkah", "partner": "Hickmet Group",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Courtyard by Marriott Makkah", "city": "Makkah", "partner": "Hickmet Group",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Rotana Jabal Omar", "city": "Makkah", "partner": "",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Shohada", "city": "Makkah", "partner": "",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Al Manakha Rotana Madinah", "city": "Madinah", "partner": "Hickmet Group",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Waqf Safi", "city": "Madinah", "partner": "Hickmet Group",
+     "per_person_night": {}, "formulas": []},
+    {"name": "View Madinah", "city": "Madinah", "partner": "Hickmet Group",
+     "per_person_night": {}, "formulas": []},
+    {"name": "Valy Madinah", "city": "Madinah", "partner": "",
+     "per_person_night": {}, "formulas": []}
+  ]
+}
