@@ -1,0 +1,9 @@
+{
+  "_note": "Test data only: made-up round prices so the calculator can be checked by hand.",
+  "hotels": [
+    {"name": "Test Makkah", "city": "Makkah", "partner": "Hickmet Group",
+     "per_person_night": {"SNGL": 300, "DBL": 200, "TRPL": 150}, "formulas": ["SNGL", "DBL", "TRPL"]},
+    {"name": "Test Madinah", "city": "Madinah", "partner": "Hickmet Group",
+     "per_person_night": {"SNGL": 160, "DBL": 100, "TRPL": 80}, "formulas": ["SNGL", "DBL", "TRPL"]}
+  ]
+}

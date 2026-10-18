@@ -1,0 +1,7 @@
+{
+  "flights": [
+    {"number": "DV495", "route": "ALA-JED", "ticket_type": "Все", "returns": ["DV498"]},
+    {"number": "DV498", "route": "MED-ALA", "ticket_type": "Все", "returns": []}
+  ],
+  "pairs": [{"outbound": "DV495", "inbound": "DV498", "adult": 840}]
+}

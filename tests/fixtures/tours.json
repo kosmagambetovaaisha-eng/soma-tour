@@ -1,0 +1,12 @@
+{
+  "defaults": {
+    "receiving_party": "Hickmet Group", "makkah_nights": 4, "madinah_nights": 3,
+    "flights": ["DV495", "DV498"], "visa": 300,
+    "addons": {"My Seat": 25},
+    "commission": {"start": [1, 10], "end": [31, 3], "percent": 5}
+  },
+  "tours": [
+    {"code": "X", "name": "Test tour", "makkah": "Test Makkah", "madinah": "Test Madinah",
+     "guide": 100, "product_price": {"DBL": 2400}}
+  ]
+}
