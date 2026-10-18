@@ -1,0 +1,22 @@
+[project]
+name = "umrah-samo"
+version = "0.1.0"
+description = "Price calculator and config checker for Hickmet Umrah group tours in SAMO-tour"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+umrah-samo = "umrah_samo.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+umrah_samo = ["data/*.json"]
