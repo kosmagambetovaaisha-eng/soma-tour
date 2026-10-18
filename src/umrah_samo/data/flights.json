@@ -1,0 +1,12 @@
+{
+  "_note": "SCAT flights. Only DV498 had ticket type «Все» on 15.10; the others still need it.",
+  "flights": [
+    {"number": "DV495", "route": "ALA-JED", "ticket_type": "В одну сторону", "returns": ["DV496", "DV498"]},
+    {"number": "DV496", "route": "MED-ALA", "ticket_type": "В одну сторону", "returns": []},
+    {"number": "DV497", "route": "ALA-JED", "ticket_type": "В одну сторону", "returns": ["DV498", "DV495"]},
+    {"number": "DV498", "route": "MED-ALA", "ticket_type": "Все", "returns": []}
+  ],
+  "pairs": [
+    {"outbound": "DV495", "inbound": "DV498", "adult": 840}
+  ]
+}
